@@ -16,17 +16,17 @@ int main()
     cin >> c;
     float D = b * b - 4 * a * c;
     if (a == 0) {
-        if (abs(b) + abs(c) == 0) {
-            cout << "Любое число" << endl;
-        }
-        else {
-            if (b == 0) {
-                cout << "нет решений" << endl;
+        if (b == 0) {
+            if (c == 0) {
+                cout << "Любое решение" << endl;
             }
             else {
-                float x = (-c) / b;
-                cout << "Корень уравнения: " << x << endl;
+                cout << "нет решений" << endl;
             }
+        }
+        else {
+            float x = (-c) / b;
+            cout << "Корень уравнения: " << x << endl;
         }
     }
     else {
